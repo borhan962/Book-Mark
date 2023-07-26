@@ -34,7 +34,7 @@ function vaildUrl (){
 }
 
 bookName.onkeyup = function(){
-    if(vaildName() && vaildUrl()){
+    if(vaildName() && vaildUrl() == false){
         add.removeAttribute("disabled")
     }else{
         add.disabled = "true";
@@ -52,8 +52,8 @@ site.onkeyup = function(){
 //addSites//
 
  function addProduct(){
-    if(add.innerHTML === "Update"){
-       add.innerHTML === "Add product";
+    if(add.innerHTML == "Update"){
+       add.innerHTML = "Add product";
         var bookmark = {
             name: bookName.value,
             site: site.value,
