@@ -1,6 +1,7 @@
 body{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F7ECDE;
 }
 
 textarea{
@@ -25,4 +26,10 @@ h1::before{
     background-color: #fec260;
     transition: height 350ms;
     z-index: -1;
+}
+
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

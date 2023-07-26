@@ -17,26 +17,28 @@
 
 <body>
     <div class="container d-flex.flex-column.justify-content-center.align-items-center">
-        <h1 class="text-center mt-5">Bookmarker</h1>
-        <div class="w-75 mx-auto py-5">
+        <h1 class="text-center my-5">Bookmarker</h1>
+        <hr>
+        <div class=" mx-auto py-4">
+           <h2 class="text-center fw-bold fs-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h2>       
             <div class="form-group mb-3">
-                <label for="bookName" class="mb-2">bookName</label>
+                <label for="bookName" class="mb-2 fw-bold"><i class="fa-solid fa-book"></i> BookName</label>
                 <input type="text" class="form-control" id="bookName">
             </div>
             <div class="form-group mb-3">
-                <label for="site" class="mb-2">URL</label>
-                <input type="text" class="form-control" id="site">
-                <button onclick="addProduct()" disabled id="add" class="btn btn-primary mt-2 btn-lg">Add
-                    product</button>
+                <label for="site" class="mb-2 fw-bold"><i class="fa-solid fa-link"></i> URL</label>
+                <input type="text" class="form-control mb-2" id="site">
+                <button onclick="addProduct()" disabled id="add" class="btn btn-primary mt-2 btn-lg ">Add product</button>
+                <hr>
             </div>
             <div class="form-group mt-5">
-                <h4 class="mb-2">productSearch</h4>
+                <h4 class="mb-3">ProductSearch</h4>
                 <input type="text" oninput="searchItem(this.value)" class="form-control" id="productSearch">
             </div>
         </div>
-        <table class="table text-center w-75 mx-auto">
+        <table class="table text-center w-100 mx-auto">
             <thead>
-                <th>index</th>
+                <th>Index</th>
                 <th>BookMark</th>
                 <th>Visit</th>
                 <th>Update</th>
