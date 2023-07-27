@@ -53,7 +53,7 @@ site.onkeyup = function(){
 
  function addProduct(){
     if(add.innerHTML === "Update"){
-       add.innerHTML = "Add product";
+       add.innerHTML = "Add Site";
         var bookmark = {
             name: bookName.value,
             site: site.value,
