@@ -16,17 +16,7 @@ h1{
     position: relative;
 }
 
-h1::before{
-    content:'';
-    position: absolute;
-    width: 20%;
-    height: 25%;
-    left: 40%;
-    bottom: 10px;
-    background-color: #fec260;
-    transition: height 350ms;
-    z-index: -1;
-}
+
 
 h2{
     background-image: linear-gradient(to right, #3ca55c, #b5ac49);
@@ -34,6 +24,3 @@ h2{
     -webkit-text-fill-color: transparent;
 }
 
-h1:hover::before{
-    height: 50%;
-}
